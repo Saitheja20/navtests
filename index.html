@@ -84,12 +84,12 @@
 </nav>
 
 <div class="menu" id="menu" style="display: none;height: 100%; margin: auto;" >
-    <div>
+    <div >
         <div>
-            <ul>
+            <ul style="text-align: center; list-style-type: none; padding: 0; margin: 12rem;">
                 <li><a href="https://vgsek.ac.in/index">Home</a></li>
                 <li><a href="https://vgsek.ac.in/about">About Us</a></li>
-                <!--<li><a href="https://vgsek.ac.in/academic.php">Academics</a></li>-->
+              
 
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -132,8 +132,7 @@
                                 Applications.(MCA)</a></li>
                     </ul>
                 </li>
-                <!--<li><a href="https://vgsek.ac.in/cse/cse.php">Programs</a></li>-->
-                <!--<li><a href="https://vgsek.ac.in/humanities/h&s_physics.php">Humanities</a></li>-->
+            
 
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -151,7 +150,7 @@
                     </ul>
                 </li>
                 <li><a href="https://vgsek.ac.in/placement/placement">Placements</a></li>
-                <!--<li><a href="https://vgsek.ac.in/facilities/facilities.php">Facilities</a></li>-->
+              
 
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -177,6 +176,87 @@
     </div>
 </div>
 
+<!-- <div class="menu" id="menu" style="display: block; margin: auto; text-align: center;">
+    <div>
+        <div>
+            <ul style="text-align: center; list-style-type: none; padding: 0; margin: 0;">
+                <li><a href="https://vgsek.ac.in/index">Home</a></li>
+                <li><a href="https://vgsek.ac.in/about">About Us</a></li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Academics
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="https://vgsek.ac.in/admissions">Admissions</a></li>
+                        <li><a class="dropdown-item" href="https://vgsek.ac.in/academic">Academic Regulations</a></li>
+                        <li><a class="dropdown-item" href="https://vgsek.ac.in/academic_calendar">Academic Calendars</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Departments
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="https://vgsek.ac.in/cse/cse2">Computer Science &amp;
+                                Engineering</a></li>
+                        <li><a class="dropdown-item" href="https://vgsek.ac.in/ece/ece2">Electronics and Communication
+                                Engineering</a></li>
+                        <li><a class="dropdown-item" href="https://vgsek.ac.in/eee/eee2">Electrical and Electronics
+                                Engineering</a></li>
+                        <li><a class="dropdown-item" href="https://vgsek.ac.in/civil/civil">Civil Engineering</a></li>
+                        <li><a class="dropdown-item" href="https://vgsek.ac.in/me/me">Mechanical Engineering</a></li>
+                        <li><a class="dropdown-item" href="https://vgsek.ac.in/ai_ml/ai_ml">Computer Science &amp;
+                                Engineering (AI &amp; ML)</a></li>
+                        <li><a class="dropdown-item" href="https://vgsek.ac.in/data/data">Computer Science &amp;
+                                Engineering (Data Science)</a></li>
+                        <li><a class="dropdown-item" href="https://vgsek.ac.in/mba">Master of Business
+                                Administration(MBA)</a></li>
+                        <li><a class="dropdown-item" href="https://vgsek.ac.in/mca">Master of Computer
+                                Applications.(MCA)</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Humanities
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="https://vgsek.ac.in/humanities/hs_english3">English</a></li>
+                        <li><a class="dropdown-item" href="https://vgsek.ac.in/humanities/hs_physics3">Physics</a></li>
+                        <li><a class="dropdown-item" href="https://vgsek.ac.in/humanities/hs_chemistry3">Chemistry</a>
+                        </li>
+                        <li><a class="dropdown-item" href="https://vgsek.ac.in/humanities/hs_maths3">Maths</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="https://vgsek.ac.in/placement/placement">Placements</a></li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Facilities
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item"
+                                href="https://vgsek.ac.in/facilities/library#infrastructure_main">Library</a></li>
+                        <li><a class="dropdown-item"
+                                href="https://vgsek.ac.in/facilities/library#infrastructure_main1">Amenities</a></li>
+                        <li><a class="dropdown-item"
+                                href="https://vgsek.ac.in/facilities/library#infrastructure_main2">PCS Facilities</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="https://vgsek.ac.in/contact">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+</div> -->
 
 <script>
     // for making menu visible when we click on the menubar 
@@ -187,6 +267,10 @@
         if (this.checked) {
             console.log('Checkbox is checked!');
             menushow.style.display = 'block';
+            menushow.style.display =' transition: right 2s ease-in-out;'
+            // data - aos="zoom-in"
+            //  menushow.setAttribute('data-aos', 'zoom-in');
+            
             // menushow.setAttribute('data-aos', 'flip-left');
             // menushow.setAttribute('data-aos-easing', 'ease-out-cubic');
             // menushow.setAttribute('data-aos-duration', '2000');
