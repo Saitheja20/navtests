@@ -9,7 +9,9 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+ 
 
 <style>
   .navbar {
@@ -23,7 +25,7 @@
         
       @media screen and (min-width: 996px) {
     .container-fluid {
-        margin-left: 2rem;
+        margin-left: 5rem;
     }
     }
 </style>
@@ -37,11 +39,53 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
         <a class="navbar-brand" href="#"><img src="assets/logo.png" alt="logo image"></a>
+       
         <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button> -->
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <a class="navbar-brand" href="#"><img src="assets/naac-a+-grade.png" alt="logo image"
+                    style="width: 120px; height: 85px;"></a>
+
+
+
+
+                    <!-- for making nav item stop -->
+                    <!-- <div class="scnd_nav_list">
+                        <ul>
+                            <li>
+                                <a href="https://forms.gle/weZnj9tCHMinwd3F6" target="_blank">Online Grievances</a>
+                    
+                            </li>
+                            <li>
+                                <a href="https://vgsek.ac.in/committees">Committees</a>
+                            </li>
+                            <li>
+                                <a href="https://vgsek.ac.in/alumni">Alumni</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="https://vgsek.ac.in/naac">NAAC</a>
+                            </li>
+                            <li>
+                                <a href="https://vgsek.ac.in/aqar">AQAR</a>
+                            </li>
+                            <li>
+                                <a href="https://vgsek.ac.in/iqac">IQAC</a>
+                            </li>
+                            <li>
+                                <a href="https://vgsek.ac.in/nirf">NIRF</a>
+                            </li>
+                            <div class="blink_code">
+                                <p>COUNSELLING CODE :</p>
+                                <h5>VGSE</h5>
+                            </div>
+                        </ul>
+                    </div> -->
+
+
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -71,8 +115,14 @@
                     </label>
                 </li> -->
             </ul>
+            <a class="navbar-brand" href="#"><img src="assets/aicte.webp" alt="aicte logo image"
+                    style="width: 100px; height: 80px;"></a>
+                    <a class="navbar-brand" href="#"><img src="assets/ugc.png" alt="aicte logo image"
+                            style="width: 100px; height: 80px;"></a>
         </div>
-        <ul>
+        <!-- <a class="navbar-brand" href="#"><img src="assets/aicte.webp" alt="aicte logo image"
+                style="width: 100px; height: 80px;"></a> -->
+        <ul class="menu-icon">
             <li class="nav-item">
                 <input type="checkbox" id="menu-toggle" class="toggler">
                 <label for="menu-toggle">
@@ -83,10 +133,10 @@
     </div>
 </nav>
 
-<div class="menu" id="menu" style="display: none;height: 100%; margin: auto;" >
+<div class="menu animate__animated animate__fadeInRight" id="menu" data-aos="fade-down" style="display: none;">
     <div >
         <div>
-            <ul style="text-align: center; list-style-type: none; padding: 0; margin: 12rem;">
+            <ul style="text-align: center; list-style-type: none; padding: 0; margin: 12rem;" class="animate__animated animate__zoomIn animate__delay-800ms">
                 <li><a href="https://vgsek.ac.in/index">Home</a></li>
                 <li><a href="https://vgsek.ac.in/about">About Us</a></li>
               
@@ -257,7 +307,7 @@
         </div>
     </div>
 </div> -->
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     // for making menu visible when we click on the menubar 
   AOS.init();
@@ -269,7 +319,7 @@
             menushow.style.display = 'block';
             menushow.style.display =' transition: right 2s ease-in-out;'
             // data - aos="zoom-in"
-            //  menushow.setAttribute('data-aos', 'zoom-in');
+             menushow.setAttribute('data-aos', 'zoom-in');
             
             // menushow.setAttribute('data-aos', 'flip-left');
             // menushow.setAttribute('data-aos-easing', 'ease-out-cubic');
