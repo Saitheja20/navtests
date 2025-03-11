@@ -133,7 +133,7 @@
     </div>
 </nav>
 
-<div class="menu animate__animated animate__fadeInRight" id="menu" data-aos="fade-down" style="display: none;">
+<div class="menu animate__animated animate__fadeInRight" id="menu"  style="display: none;">
     <div >
         <div>
             <ul style="text-align: center; list-style-type: none; padding: 0; margin: 12rem;" class="animate__animated animate__zoomIn animate__delay-1s" id="menulist">
@@ -310,15 +310,17 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     // for making menu visible when we click on the menubar 
-    AOS.init();
+    // AOS.init();
     const menuToggle = document.getElementById('menu-toggle');
     const menushow = document.getElementById('menu');
     const menulist = document.getElementById('menulist');
 
     menuToggle.addEventListener('change', function () {
         if (this.checked) {
+            //  menushow.classList.add('animate__animated', 'animate__fadeInRight');
             console.log('Checkbox is checked!');
             console.log(menulist);
+            console.log(menushow);
             menulist.classList.remove('animate__animated', 'animate__fadeOutRight');
             menulist.classList.add('animate__animated', 'animate__zoomIn', 'animate__delay-1s');
             menushow.style.display = 'block';
@@ -326,32 +328,40 @@
         } else {
             console.log('Checkbox is unchecked!');
             console.log(menulist);  // Debugging step
-
+            console.log(menushow);
             // Remove existing animations
             menulist.classList.remove('animate__animated', 'animate__zoomIn', 'animate__delay-1s');
-
+            menushow.classList.remove('animate__animated', 'animate__fadeInRight');
             // Add the fadeOutRight animation class to menulist
             menulist.classList.add('animate__animated', 'animate__fadeOutRight');
+            setTimeout(function () {
+                  menushow.classList.add('animate__animated', 'animate__fadeOutRight');
+            }, 100);
+          
             console.log('Added anime class!');
-
+            
             // Wait for the animation to finish before hiding the menu
              //menulist.addEventListener('animationend', function () {
                 // After animation ends, hide the menu
                 // menushow.style.display = 'none';
-                setTimeout(function () {
-                menushow.style.display = 'none';
-            }, 900);
+                
                 // Remove the animation classes to allow future animations
                 setTimeout(function () {
                 menulist.classList.remove('animate__animated', 'animate__fadeOutRight');
-            }, 200);
+            }, 400);
                 // menulist.classList.remove('animate__animated', 'animate__fadeOutRight');
                 console.log("removed the fadeout")
                 setTimeout(function () {
                  menulist.classList.add('animate__animated', 'animate__zoomIn', 'animate__delay-1s');
-            }, 200);
-                
-
+            }, 500);
+                setTimeout(function () {
+                menushow.classList.remove('animate__animated', 'animate__fadeOutRight');
+            }, 700);
+            setTimeout(function () {
+                menushow.style.display = 'none';
+                menushow.classList.add('animate__animated', 'animate__fadeInRight');
+            }, 700);
+            
             
                  console.log("added the animate zoomin")
              //});
